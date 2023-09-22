@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "src/index.ts",
+  "type": "module",
   "scripts": {
     "migrate:create": "npx prisma migrate dev --name",
     "dev": "nodemon --exec ts-node ./src/index.ts",
