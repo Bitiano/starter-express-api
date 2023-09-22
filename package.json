@@ -6,9 +6,8 @@
   "scripts": {
     "migrate:create": "npx prisma migrate dev --name",
     "dev": "nodemon --exec ts-node ./src/index.ts",
-    "start": "node ./dist/index.js",
-    "test": "jest",
-    "build": "tsc -p ."
+    "build": "sucrase ./src --out-dir ./dist --transforms typescript,imports",
+    "test": "jest"
   },
   "keywords": [],
   "author": "",
