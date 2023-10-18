@@ -7,7 +7,8 @@
     "dev": "nodemon --exec ts-node ./src/index.ts",
     "build": "sucrase ./src --out-dir ./dist --transforms typescript,imports",
     "start": "node ./dist/index.js",
-    "test": "jest"
+    "test": "jest",
+    "vercel-build": "npx prisma migrate deploy"
   },
   "keywords": [],
   "author": "",
